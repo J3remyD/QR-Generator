@@ -1,3 +1,5 @@
+package main.java;
+
 import com.google.zxing.common.BitMatrix;
 
 public class Launcher {
@@ -6,7 +8,7 @@ public class Launcher {
     private static final int OUTPUT_SIZE = 128;
     private static final String SEPARATOR = ".";
     private static final String EXT ="png";
-    private static final String OUTPUT_PATH = "src/main/resources/test2";
+    private static final String OUTPUT_PATH = "./outputs/test2";
 
     public static void main(String[] args) {
         BitMatrix matrix = QRGenerator.generateMatrix(DATA, OUTPUT_SIZE);
